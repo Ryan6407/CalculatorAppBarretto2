@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/md_theme_dark_onTertiary"
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonDivision"
         android:layout_width="73dp"
         android:layout_height="69dp"
         android:layout_marginStart="256dp"
@@ -18,7 +19,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonSubstraction"
         android:layout_width="73dp"
         android:layout_height="69dp"
         android:layout_marginStart="256dp"
@@ -29,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonMultiplication"
         android:layout_width="73dp"
         android:layout_height="69dp"
         android:layout_marginStart="112dp"
@@ -40,13 +41,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:text="number2"
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/inputNumber2"
         android:layout_width="103dp"
         android:layout_height="48dp"
         android:layout_marginTop="132dp"
         android:ems="10"
         android:inputType="number"
+        android:text="number2"
+        android:textColor="@color/md_theme_light_secondary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.948"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,6 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calculator App"
+        android:textColor="@color/md_theme_dark_tertiary"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,23 +74,25 @@
         android:layout_marginTop="13dp"
         android:layout_marginEnd="108dp"
         android:text="To Solve All of Life's Problems"
+        android:textColor="@color/md_theme_dark_onPrimaryContainer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:text="number1"
-        android:id="@+id/editTextNumber"
+        android:id="@+id/inputNumber1"
         android:layout_width="103dp"
         android:layout_height="48dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="132dp"
         android:ems="10"
         android:inputType="number"
+        android:text="number1"
+        android:textColor="@color/md_theme_light_secondary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonAddition"
         android:layout_width="73dp"
         android:layout_height="69dp"
         android:layout_marginStart="112dp"
@@ -101,10 +106,23 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="116dp"
         android:layout_marginEnd="56dp"
         android:text="operation"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNumber2"
+        android:textColor="@color/seed"
+        app:layout_constraintEnd_toStartOf="@+id/inputNumber2"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="137dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="316dp"
+        android:text="Output"
+        android:textColor="@color/md_theme_light_primaryContainer"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
