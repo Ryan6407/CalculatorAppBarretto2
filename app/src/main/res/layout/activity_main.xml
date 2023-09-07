@@ -16,7 +16,8 @@
         android:text="/"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:onClick="onButtonClick"/>
 
     <Button
         android:id="@+id/buttonSubstraction"
@@ -27,7 +28,9 @@
         android:text="-"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:onClick="onButtonClick"/>
+
 
     <Button
         android:id="@+id/buttonMultiplication"
@@ -38,7 +41,8 @@
         android:text="x"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:onClick="onButtonClick"/>
 
     <EditText
         android:id="@+id/inputNumber2"
@@ -100,7 +104,8 @@
         android:text="+"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:onClick="onButtonClick"/>
 
     <TextView
         android:id="@+id/textView3"
