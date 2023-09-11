@@ -31,23 +31,61 @@ public class MainActivity extends AppCompatActivity {
 
         String output = "";
 
+        String symbol = "";
+
         int buttonId = view.getId();
 
         if (buttonId == R.id.buttonAddition){
             result = number1_val + number2_val;
             output = "" + number1_val + " + " + number2_val + " = " + result;
+            symbol = "  +";
         }
         else if (buttonId == R.id.buttonSubstraction){
             result = number1_val - number2_val;
             output = "" + number1_val + " - " + number2_val + " = " + result;
+            symbol = "  -";
         }
-        else if (buttonId == R.id.buttonMultiplication){
+        else if (buttonId == R.id.buttonMultiplication) {
             result = number1_val * number2_val;
             output = "" + number1_val + " x " + number2_val + " = " + result;
+            symbol = "  x";
         }
         else if (buttonId == R.id.buttonDivision){
             result = number1_val / number2_val;
             output = "" + number1_val + " / " + number2_val + " = " + result;
+            symbol = "  /";
+        }
+        else if (buttonId == R.id.buttonToPower){
+            result = (float) Math.pow(number1_val, number2_val);
+            output = "" + number1_val + " ^ " + number2_val + " = " + result;
+            symbol = "  ^";
+        }
+
+        else if (buttonId == R.id.buttonModulus){
+            output = "" + number1_val + " % " + number2_val + " = " + result;
+            symbol = "  %";
+        }
+
+        else if (buttonId == R.id.buttonNotEqual){
+            output = "no";
+            if (number1_val != number2_val){
+                output = "yes";
+            }
+            symbol = "  ≠";
+        }
+        else if (buttonId == R.id.buttonGreaterThan){
+            output = "no";
+            if (number1_val > number2_val){
+                output = "yes";
+            }
+            symbol = "  >";
+        }
+        else if (buttonId == R.id.buttonLessThan){
+            output = "no";
+            if (number1_val < number2_val){
+                output = "yes";
+            }
+            symbol = "  <";
         }
 
         Log.i("ryanbar", "" + result);
@@ -57,5 +95,9 @@ public class MainActivity extends AppCompatActivity {
         TextView outputTextView = findViewById(R.id.textView4);
 
         outputTextView.setText(output);
+
+        TextView outputTextView2 = findViewById(R.id.textView3);
+
+        outputTextView2.setText(symbol);
     }
 }
