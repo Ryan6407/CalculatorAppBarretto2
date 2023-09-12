@@ -16,4 +16,9 @@ public class AppUserCompat extends AppCompatActivity {
         Intent intent = getIntent();
     }
 
+    public void switchToMain(View v){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
 }

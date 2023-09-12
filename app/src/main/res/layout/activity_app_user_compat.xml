@@ -8,12 +8,38 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="557dp"
-        android:layout_height="560dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="300dp"
-        android:text="TextView"
-        android:textSize="70sp"
+        android:layout_width="304dp"
+        android:layout_height="113dp"
+        android:text="About Page"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="338dp"
+        android:layout_height="374dp"
+        android:layout_marginTop="40dp"
+        android:text="Sure, you can find a calculator app just about everywhere. But this isn't just any calculator app. It's an experience. It's a way of life. It's a friend. And yeah, the calculations will be the same no matter what app you use, whether it be desmos or google. But you won't find the same kind of customer experience there that you'll find here. So raise your expressions high to a new relationship."
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="155dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="104dp"
+        android:onClick="switchToMain"
+        android:text="Home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 </androidx.constraintlayout.widget.ConstraintLayout>

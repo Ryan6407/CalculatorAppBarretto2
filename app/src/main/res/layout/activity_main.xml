@@ -126,7 +126,7 @@
         android:layout_height="101dp"
         android:layout_marginStart="76dp"
         android:layout_marginTop="320dp"
-        android:text="       Output"
+        android:text=""
         android:textAlignment="center"
         android:textColor="@color/md_theme_light_primaryContainer"
         android:textSize="40dp"
@@ -200,6 +200,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="308dp"
         android:text="About"
+        android:onClick="switchToAbout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

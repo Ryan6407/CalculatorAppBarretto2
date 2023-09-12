@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         else if (buttonId == R.id.buttonModulus){
+            result = number1_val % number2_val;
             output = "" + number1_val + " % " + number2_val + " = " + result;
             symbol = "  %";
         }
@@ -90,8 +91,6 @@ public class MainActivity extends AppCompatActivity {
 
         Log.i("ryanbar", "" + result);
 
-        Intent intent = new Intent(this, MainActivity.class);
-
         TextView outputTextView = findViewById(R.id.textView4);
 
         outputTextView.setText(output);
@@ -99,5 +98,10 @@ public class MainActivity extends AppCompatActivity {
         TextView outputTextView2 = findViewById(R.id.textView3);
 
         outputTextView2.setText(symbol);
+    }
+
+    public void switchToAbout(View v){
+        Intent intent = new Intent(this, AppUserCompat.class);
+        startActivity(intent);
     }
 }
