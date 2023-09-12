@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">CalculatorAppBarretto2</string>
+    <string name="calculator_app">CalculatorAppBarretto2</string>
+    <string name="title">Title</string>
 </resources>
