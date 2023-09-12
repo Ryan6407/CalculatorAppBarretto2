@@ -3,4 +3,5 @@
     <dimen name="title_size">16dp</dimen>
     <dimen name="button_width">73dp</dimen>
     <dimen name="button_height">69dp</dimen>
+    <dimen name="button_margin_start">160dp</dimen>
 </resources>
