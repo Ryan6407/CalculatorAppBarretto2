@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     public void onButtonClick(View view){
 
         EditText number1 = findViewById(R.id.inputNumber1);
-        EditText number2 = (EditText) findViewById(R.id.inputNumber2);
+        EditText number2 = findViewById(R.id.inputNumber2);
 
         float number1_val = parseFloat(number1.getText().toString());
         float number2_val = parseFloat(number2.getText().toString());
@@ -68,23 +68,23 @@ public class MainActivity extends AppCompatActivity {
         }
 
         else if (buttonId == R.id.buttonNotEqual){
-            output = "no";
+            output = "False";
             if (number1_val != number2_val){
-                output = "yes";
+                output = "True";
             }
             symbol = "  ≠";
         }
         else if (buttonId == R.id.buttonGreaterThan){
-            output = "no";
+            output = "False";
             if (number1_val > number2_val){
-                output = "yes";
+                output = "True";
             }
             symbol = "  >";
         }
         else if (buttonId == R.id.buttonLessThan){
-            output = "no";
+            output = "False";
             if (number1_val < number2_val){
-                output = "yes";
+                output = "True";
             }
             symbol = "  <";
         }
