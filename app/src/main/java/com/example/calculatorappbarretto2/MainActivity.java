@@ -107,4 +107,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AppUserCompat.class);
         startActivity(intent);
     }
+
+    public void switchToHistory(View v){
+        Intent intent = new Intent(this, HistoryActivity.class);
+        intent.putExtra("historyText", calculationHistory);
+        startActivity(intent);
+    }
 }
