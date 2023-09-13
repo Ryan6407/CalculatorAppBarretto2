@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    private String calculationHistory;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -89,9 +90,11 @@ public class MainActivity extends AppCompatActivity {
             symbol = "  <";
         }
 
-        Log.i("ryanbar", "" + result);
-
         TextView outputTextView = findViewById(R.id.textView4);
+
+        calculationHistory += output + "\n\n";
+
+        Log.i("ryanbar", "" + calculationHistory);
 
         outputTextView.setText(output);
 
