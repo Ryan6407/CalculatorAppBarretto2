@@ -22,7 +22,7 @@ public class HistoryActivity extends AppCompatActivity {
         Log.i("denna", "Received " + received);
 
         TextView infoTV = findViewById(R.id.textView7);
-        infoTV.setText(received);
+        infoTV.setText(received.substring(4));
     }
 
     public void switchToMain(View v){
